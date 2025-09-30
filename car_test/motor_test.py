@@ -2,12 +2,12 @@ import Jetson.GPIO as GPIO
 import time
 
 # 모터 드라이버에 연결된 GPIO 핀 번호 설정 (BCM 모드)
-MOTOR_A_IN1 = 6
-MOTOR_A_IN2 = 5
-MOTOR_A_ENA = 13
+MOTOR_A_IN1 = 31
+MOTOR_A_IN2 = 29
+MOTOR_A_ENA = 33
 
 # GPIO 모드 설정 (BCM 모드: 핀 번호 대신 GPIO 번호 사용)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
 # 핀들을 출력으로 설정
 GPIO.setup(MOTOR_A_IN1, GPIO.OUT)
